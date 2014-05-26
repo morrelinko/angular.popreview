@@ -1,0 +1,16 @@
+.popreview {
+    position: relative;
+}
+
+.popreview-container {
+    position: absolute;
+    top: 0;
+    border: 1px solid #EFEFEF;
+    background: #FFFFFF;
+    padding: 10px;
+    color: #222222;
+    overflow: hidden;
+    width: 140px;
+    z-index: 1006;
+    text-align: center;
+}

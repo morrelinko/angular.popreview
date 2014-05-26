@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="../styles/popreview.css" />
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        p {
+            margin: 0;
+            padding: 0;
+        }
+
+        #container {
+            width: 360px;
+            margin: 0 auto;
+            margin-top: 130px;
+        }
+    </style>
+</head>
+<body ng-app="ContactsApp">
+
+    <div id="container" ng-controller="ContactsCtrl">
+        <ul>
+            <li ng-repeat="contact in contacts">
+                <a popreview preview-image="{{ contact.image }}" preview-title="{{ contact.name }}" preview-extra="{{ contact.name }}">
+                    <img ng-src="{{ contact.image }}" />
+                </a>
+            </li>
+        </ul>
+    </div>
+    <script src="../lib/angular.js" type="text/javascript"></script>
+    <script src="../scripts/angular.popreview.js" type="text/javascript"></script>
+    <script src="contacts.js" type="text/javascript"></script>
+</body>
+</html>
